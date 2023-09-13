@@ -1,0 +1,2 @@
+rootProject.name = "SparkGPT"
+include ':app'

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/chat_output_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chat_input_text"
+        android:layout_alignParentTop="true"
+        android:scrollbars="vertical" />
+
+    <EditText
+        android:layout_above="@+id/chat_start_btn"
+        android:id="@+id/chat_input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="用户输入"/>
+
+    <Button
+        android:id="@+id/chat_start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="SEND"/>
+
+</RelativeLayout>
